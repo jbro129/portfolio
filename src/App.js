@@ -5,10 +5,10 @@ import Header from './components/Header'
 import './App.css'
 
 import skillsJson from './components/skills.json'
-import Project from './components/Project'
+import ProjectCard from './components/ProjectCard'
 
 import TMIcon from './assets/icon_tm.webp'
-import JbroIcon from './assets/icon_jbro129.jpg'
+import JbroIcon from './assets/icon_jbro129.webp'
 import Footer from './components/Footer'
 
 function addSkills() {
@@ -33,7 +33,7 @@ function App() {
 				<div className="body-block">
 					<h1>Projects</h1>
 					<div className="projects">
-						<Project
+						<ProjectCard
 							title="TManager Android App"
 							desc="Android app built in Java with Android Studio and is published to the Google Play Store."
 							image={TMIcon}
@@ -51,7 +51,7 @@ function App() {
 								)
 							}}
 						/>
-						<Project
+						<ProjectCard
 							title="TManager Web App"
 							desc="A web implementation of my popular android app TManager. Built using the FERN stack."
 							image={TMIcon}
@@ -66,7 +66,7 @@ function App() {
 								window.open('https://tmanager-web.web.app/', '_blank')
 							}}
 						/>
-						<Project
+						<ProjectCard
 							title="Jbro129 YouTube Channel"
 							desc="My YouTube channel that I grew to 250,000+ subscribers and have been working on since 2013."
 							image={JbroIcon}

@@ -1,7 +1,7 @@
 import React from 'react'
 import { Card, Button } from 'react-bootstrap'
 
-function Project({
+function ProjectCard({
 	title,
 	desc,
 	image,
@@ -56,4 +56,4 @@ function Project({
 	)
 }
 
-export default Project
+export default ProjectCard

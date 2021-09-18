@@ -1,9 +1,9 @@
 import React from 'react'
 
-import Headshot from '../assets/headshot.jpg'
-import LinkedinLogo from '../assets/icon_linkedin.png'
-import GithubLogo from '../assets/icon_github.png'
-import ResumeLogo from '../assets/icon_resume.png'
+import Headshot from '../assets/headshot.webp'
+import LinkedinLogo from '../assets/icon_linkedin.webp'
+import GithubLogo from '../assets/icon_github.webp'
+import ResumeLogo from '../assets/icon_resume.webp'
 
 import Resume from '../assets/Jonah Allen - Resume.pdf'
 

@@ -14,7 +14,12 @@ function Project({
 }) {
 	return (
 		<Card style={{ width: '20rem' }} className="bordered">
-			<Card.Img variant="top" style={{ padding: '1rem', borderRadius: "44%" }} src={image} />
+			<Card.Img
+				variant="top"
+				style={{ padding: '1rem', borderRadius: '44%' }}
+				src={image}
+				onDragStart={(e) => e.preventDefault()}
+			/>
 			<Card.Body>
 				<Card.Title>{title}</Card.Title>
 				<Card.Text>{desc}</Card.Text>

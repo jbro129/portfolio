@@ -23,6 +23,17 @@
 	color: #039be5;
 }
 
+.social-text {
+	margin-left: 10px;
+	color: white;
+}
+
+.social-button:hover {
+	text-shadow: -1.5px -1.5px 0 black, 0 -1.5px 0 black, 1.5px -1.5px 0 black,
+	1.5px 0 0 black, 1.5px 1.5px 0 black, 0 1.5px 0 black, -1.5px 1.5px 0 black,
+	-1.5px 0 0 black;
+}
+
 .bordered {
 	margin-left: 30px;
 	margin-right: 30px;

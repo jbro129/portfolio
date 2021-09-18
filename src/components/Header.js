@@ -11,7 +11,12 @@ function Header() {
 	return (
 		<>
 			<div className="header-container">
-				<img className="headshot" src={Headshot} alt="Jonahs Headshot" />
+				<img
+					className="headshot"
+					src={Headshot}
+					alt="Jonahs Headshot"
+					onDragStart={(e) => e.preventDefault()}
+				/>
 				<div className="bordered">
 					<h1>Jonah Allen</h1>
 					<h3>Fullstack Software Engineer</h3>
@@ -32,6 +37,7 @@ function Header() {
 						style={{ height: '50px', width: '50px' }}
 						src={LinkedinLogo}
 						alt="LinkedIn Logo"
+						onDragStart={(e) => e.preventDefault()}
 					/>
 					<h5 style={{ color: 'white', marginLeft: '10px' }}>LinkedIn</h5>
 				</div>
@@ -45,22 +51,21 @@ function Header() {
 						style={{ height: '50px', width: '50px' }}
 						src={GithubLogo}
 						alt="Github Logo"
+						onDragStart={(e) => e.preventDefault()}
 					/>
-					<h5 style={{ color: 'white', marginLeft: '10px' }}>Github</h5>
+					<h5 className="social-text">Github</h5>
 				</div>
 				<div
 					className="social-button"
 					onClick={() => {
-						window.open(
-							Resume,
-							'_blank'
-						)
+						window.open(Resume, '_blank')
 					}}
 				>
 					<img
 						style={{ height: '50px', width: '50px' }}
 						src={ResumeLogo}
 						alt="Resume Icon"
+						onDragStart={(e) => e.preventDefault()}
 					/>
 					<h5 style={{ color: 'white', marginLeft: '10px' }}>Resume</h5>
 				</div>

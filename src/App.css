@@ -1,10 +1,11 @@
 .App {
 	background-color: #3838ff;
-  padding-bottom: 1rem;
-  padding-top: 1rem;
+	padding-bottom: 1rem;
+	padding-top: 1rem;
 }
 
-.header-container, .footer-container {
+.header-container,
+.footer-container {
 	padding: 1rem;
 	display: flex;
 	justify-content: center;
@@ -14,7 +15,7 @@
 }
 
 .footer-container > h5 > a {
-  color: black;
+	color: black;
 	text-decoration: underline;
 }
 
@@ -34,8 +35,8 @@
 }
 
 .body-block {
-  margin-top: 2rem;
-  margin-bottom: 2rem;
+	margin-top: 2rem;
+	margin-bottom: 2rem;
 }
 
 .headshot {
@@ -59,32 +60,32 @@
 }
 
 .social-button {
-  display: flex;
-  justify-content: center;
+	display: flex;
+	justify-content: center;
 	align-content: center;
 	align-items: center;
-  width: 50px;
-  height: 50px;
-  cursor: pointer;
-}
-
-.social-button > h5 {
-  float: right;
+	width: 50px;
+	height: 50px;
+	cursor: pointer;
 }
 
 .projects {
-  display: flex;
-  justify-content: center;
+	display: flex;
+	justify-content: center;
 	align-content: center;
 	align-items: center;
-  margin: 0.5rem;
-  padding: 0.5rem;
-  flex-direction: row;
+	margin: 0.5rem;
+	padding: 0.5rem;
+	flex-direction: row;
+}
+
+.projects > div {
+  margin-bottom: 1rem;
 }
 
 .project-buttons {
-  display: flex;
-  justify-content: center;
+	display: flex;
+	justify-content: center;
 	align-content: center;
 	align-items: center;
 }
@@ -98,7 +99,11 @@
 		width: 200px;
 		height: 200px;
 	}
-  .projects {
+	.projects,
+	.social-buttons {
 		flex-direction: column;
-  }
+	}
+	.social-button {
+		margin-top: 0.5rem;
+	}
 }

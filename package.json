@@ -2,20 +2,30 @@
   "name": "jonah-porfolio",
   "version": "0.1.0",
   "private": true,
+  "description": "Jonah Allens Portfolio",
+  "homepage": "https://jonah-portfolio.web.app/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
+    "bootstrap": "^5.1.1",
+    "firebase": "^9.0.2",
     "react": "^17.0.2",
+    "react-bootstrap": "^2.0.0-beta.6",
     "react-dom": "^17.0.2",
+    "react-helmet": "^6.1.0",
+    "react-router-dom": "^5.3.0",
     "react-scripts": "4.0.3",
+    "react-spa-prerender": "^1.0.11",
     "web-vitals": "^1.0.1"
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "set \"GENERATE_SOURCEMAP=false\" && react-scripts build",
+    "postbuild": "react-spa-prerender",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "deploy": "yarn build && firebase deploy"
   },
   "eslintConfig": {
     "extends": [

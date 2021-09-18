@@ -9,6 +9,7 @@ import Project from './components/Project'
 
 import TMIcon from './assets/icon_tm.webp'
 import JbroIcon from './assets/icon_jbro129.jpg'
+import Footer from './components/Footer'
 
 function addSkills() {
 	return skillsJson.map((skill) => {
@@ -77,6 +78,7 @@ function App() {
 					</div>
 				</div>
 			</div>
+      <Footer />
 		</div>
 	)
 }

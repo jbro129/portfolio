@@ -30,8 +30,8 @@
 
 .social-button:hover {
 	text-shadow: -1.5px -1.5px 0 black, 0 -1.5px 0 black, 1.5px -1.5px 0 black,
-	1.5px 0 0 black, 1.5px 1.5px 0 black, 0 1.5px 0 black, -1.5px 1.5px 0 black,
-	-1.5px 0 0 black;
+		1.5px 0 0 black, 1.5px 1.5px 0 black, 0 1.5px 0 black, -1.5px 1.5px 0 black,
+		-1.5px 0 0 black;
 }
 
 .bordered {
@@ -91,7 +91,7 @@
 }
 
 .projects > div {
-  margin-bottom: 1rem;
+	margin-bottom: 1rem;
 }
 
 .project-buttons {

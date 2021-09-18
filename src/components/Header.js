@@ -5,6 +5,8 @@ import LinkedinLogo from '../assets/icon_linkedin.png'
 import GithubLogo from '../assets/icon_github.png'
 import ResumeLogo from '../assets/icon_resume.png'
 
+import Resume from '../assets/Jonah Allen - Resume.pdf'
+
 function Header() {
 	return (
 		<>
@@ -50,7 +52,7 @@ function Header() {
 					className="social-button"
 					onClick={() => {
 						window.open(
-							'https://jonah-portfolio.web.app/Jonah%20Allen%20-%20Resume.pdf',
+							Resume,
 							'_blank'
 						)
 					}}

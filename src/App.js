@@ -11,11 +11,12 @@ import ProjectCard from './components/ProjectCard'
 import TMIcon from './assets/icon_tm.webp'
 import JbroIcon from './assets/icon_jbro129.webp'
 import HeadshotIcon from './assets/headshot.webp'
+import SigIcon from './assets/icon_sigdisplayer.webp'
 
 function addSkills() {
 	return skillsJson.map((skill) => {
 		return (
-			<Badge className="skill-badge" bg="primary">
+			<Badge key={skill} className="skill-badge" bg="primary">
 				{skill}
 			</Badge>
 		)
@@ -74,6 +75,18 @@ function App() {
 							button1txt="YouTube Channel"
 							button1click={() => {
 								window.open('https://www.youtube.com/Jbro129', '_blank')
+							}}
+						/>
+						<ProjectCard
+							title="SigDisplayer"
+							desc="An android app that parses its own signature and displays it. Built in Java with Android Studio."
+							image={SigIcon}
+							button1txt="Source"
+							button1click={() => {
+								window.open(
+									'https://github.com/jbro129/SigDisplayer',
+									'_blank'
+								)
 							}}
 						/>
 						<ProjectCard

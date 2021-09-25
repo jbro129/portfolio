@@ -102,7 +102,7 @@
 	align-items: center;
 }
 
-@media (max-width: 450px) {
+@media (max-width: 500px) {
 	.header-container {
 		flex-direction: column;
 	}

@@ -5,18 +5,18 @@
   "description": "Jonah Allens Portfolio",
   "homepage": "https://jonah-portfolio.web.app/",
   "dependencies": {
-    "@testing-library/jest-dom": "^5.11.4",
-    "@testing-library/react": "^11.1.0",
-    "@testing-library/user-event": "^12.1.10",
+    "@testing-library/jest-dom": "^5.14.1",
+    "@testing-library/react": "^12.1.0",
+    "@testing-library/user-event": "^13.2.1",
     "bootstrap": "^5.1.1",
-    "firebase": "^9.0.2",
+    "firebase": "^9.1.0",
     "react": "^17.0.2",
     "react-bootstrap": "^2.0.0-beta.6",
     "react-dom": "^17.0.2",
     "react-helmet": "^6.1.0",
     "react-scripts": "4.0.3",
     "react-spa-prerender": "^1.0.11",
-    "web-vitals": "^1.0.1"
+    "web-vitals": "^2.1.0"
   },
   "scripts": {
     "start": "react-scripts start",

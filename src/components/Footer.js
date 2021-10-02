@@ -9,6 +9,10 @@ function Footer() {
 						Click here to visit the Github project for this portfolio
 					</a>
 				</h5> */}
+				
+				<h5 style={{ color: 'black' }}>
+					© 2021 Jbro129 Gaming LLC.
+				</h5>
 			</div>
 		</>
 	)

@@ -51,7 +51,7 @@ function Header() {
 				<div
 					className="social-button"
 					onClick={() => {
-						window.open("/assets/Jonah Allen - Resume", '_blank')
+						window.open("/assets/Jonah Allen - Resume.pdf", '_blank')
 					}}
 				>
 					<img

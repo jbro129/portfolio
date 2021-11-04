@@ -11,12 +11,17 @@ function ProjectCard({
 	button2click,
 	button3txt,
 	button3click,
+	roundIcon,
 }) {
+	const imgStyle = roundIcon
+		? { padding: '1rem', borderRadius: '25%' }
+		: { padding: '1rem' }
+
 	return (
 		<Card style={{ width: '20rem' }} className="bordered">
 			<Card.Img
 				variant="top"
-				style={{ padding: '1rem', borderRadius: '44%' }}
+				style={imgStyle}
 				src={image}
 				onDragStart={(e) => e.preventDefault()}
 			/>

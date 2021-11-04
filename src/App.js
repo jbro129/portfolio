@@ -8,11 +8,6 @@ import './App.css'
 import skillsJson from './components/skills.json'
 import ProjectCard from './components/ProjectCard'
 
-import TMIcon from './assets/icon_tm.webp'
-import JbroIcon from './assets/icon_jbro129.webp'
-import HeadshotIcon from './assets/headshot.webp'
-import SigIcon from './assets/icon_sigdisplayer.webp'
-
 function addSkills() {
 	return skillsJson.map((skill) => {
 		return (
@@ -38,7 +33,8 @@ function App() {
 						<ProjectCard
 							title="TManager Android App"
 							desc="Android app built in Java with Android Studio and is published to the Google Play Store."
-							image={TMIcon}
+							image="/assets/icon_tm.webp"
+							roundIcon={true}
 							button1txt="Source"
 							button1click={() => {
 								alert(
@@ -56,7 +52,8 @@ function App() {
 						<ProjectCard
 							title="TManager Web App"
 							desc="A web implementation of my popular android app TManager. Built using the FERN stack."
-							image={TMIcon}
+							image="/assets/icon_tm.webp"
+							roundIcon={true}
 							button1txt="Source"
 							button1click={() => {
 								alert(
@@ -71,7 +68,8 @@ function App() {
 						<ProjectCard
 							title="Jbro129 YouTube Channel"
 							desc="My YouTube channel that I grew to 250,000+ subscribers and have been working on since 2013."
-							image={JbroIcon}
+							image="/assets/icon_jbro129.webp"
+							roundIcon={true}
 							button1txt="YouTube Channel"
 							button1click={() => {
 								window.open('https://www.youtube.com/Jbro129', '_blank')
@@ -80,28 +78,42 @@ function App() {
 						<ProjectCard
 							title="SigDisplayer"
 							desc="An android app that parses its own signature and displays it. Built in Java with Android Studio."
-							image={SigIcon}
+							image="/assets/icon_sigdisplayer.webp"
+							roundIcon={true}
 							button1txt="Source"
 							button1click={() => {
-								window.open(
-									'https://github.com/jbro129/SigDisplayer',
-									'_blank'
-								)
+								window.open('https://github.com/jbro129/SigDisplayer', '_blank')
+							}}
+						/>
+						<ProjectCard
+							title="The Brick Wall"
+							desc="A website where users can post messages to a wall that I built with React.js, Firebase Auth, and Express.js."
+							image="/assets/icon_thewall.webp"
+							button1txt="Frontend"
+							button1click={() => {
+								window.open('https://github.com/jbro129/the-wall-app', '_blank')
+							}}
+							button2txt="Backend"
+							button2click={() => {
+								window.open('https://github.com/jbro129/the-wall-api', '_blank')
+							}}
+							button3txt="Deployed"
+							button3click={() => {
+								window.open('https://jonahs-wall-app.web.app/', '_blank')
 							}}
 						/>
 						<ProjectCard
 							title="Jonahs Portfolio"
 							desc="This is my portfolio that I built in React.js with Bootstrap and deployed with Firebase."
-							image={HeadshotIcon}
+							image="/assets/headshot.webp"
+							roundIcon={true}
 							button1txt="Source"
 							button1click={() => {
 								window.open('https://github.com/jbro129/portfolio', '_blank')
 							}}
 							button2txt="Deployed"
 							button2click={() => {
-								alert(
-									'You are already here! :)'
-								)
+								alert('You are already here! :)')
 							}}
 						/>
 					</div>

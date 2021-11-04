@@ -1,19 +1,12 @@
 import React from 'react'
 
-import Headshot from '../assets/headshot.webp'
-import LinkedinLogo from '../assets/icon_linkedin.webp'
-import GithubLogo from '../assets/icon_github.webp'
-import ResumeLogo from '../assets/icon_resume.webp'
-
-import Resume from '../assets/Jonah_Allen_Resume.pdf'
-
 function Header() {
 	return (
 		<>
 			<div className="header-container">
 				<img
 					className="headshot"
-					src={Headshot}
+					src="/assets/headshot.webp"
 					alt="Jonahs Headshot"
 					onDragStart={(e) => e.preventDefault()}
 				/>
@@ -35,7 +28,7 @@ function Header() {
 				>
 					<img
 						style={{ height: '50px', width: '50px' }}
-						src={LinkedinLogo}
+						src="/assets/icon_linkedin.webp"
 						alt="LinkedIn Logo"
 						onDragStart={(e) => e.preventDefault()}
 					/>
@@ -49,7 +42,7 @@ function Header() {
 				>
 					<img
 						style={{ height: '50px', width: '50px' }}
-						src={GithubLogo}
+						src="/assets/icon_github.webp"
 						alt="Github Logo"
 						onDragStart={(e) => e.preventDefault()}
 					/>
@@ -58,12 +51,12 @@ function Header() {
 				<div
 					className="social-button"
 					onClick={() => {
-						window.open(Resume, '_blank')
+						window.open("/assets/Jonah Allen - Resume", '_blank')
 					}}
 				>
 					<img
 						style={{ height: '50px', width: '50px' }}
-						src={ResumeLogo}
+						src="/assets/icon_resume.webp"
 						alt="Resume Icon"
 						onDragStart={(e) => e.preventDefault()}
 					/>

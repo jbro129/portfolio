@@ -51,7 +51,7 @@ function Header() {
 				<div
 					className="social-button"
 					onClick={() => {
-						window.open("/assets/Jonah Allen - Resume.pdf", '_blank')
+						window.open("https://storage.googleapis.com/storage-jsa/Jonah%20Allen%20-%20Resume.pdf", '_blank')
 					}}
 				>
 					<img

@@ -38,7 +38,7 @@ function App() {
 							button1txt="Source"
 							button1click={() => {
 								alert(
-									'The TManager Android App source is private. If you are interested in seeing the code then please connect with me on LinkedIn and send me a message'
+									'The TManager Android App source is private. If you are interested in seeing the code then please connect with me on LinkedIn and send me a message.'
 								)
 							}}
 							button2txt="Google Play Store"
@@ -57,7 +57,7 @@ function App() {
 							button1txt="Source"
 							button1click={() => {
 								alert(
-									'The TManager Web App source is private. If you interested in seeing the code then please connect with me on LinkedIn and send me a message'
+									'The TManager Web App source is private. If you interested in seeing the code then please connect with me on LinkedIn and send me a message.'
 								)
 							}}
 							button2txt="Deployed"
@@ -87,7 +87,7 @@ function App() {
 						/>
 						<ProjectCard
 							title="The Brick Wall"
-							desc="A website where users can post messages to a wall that I built with React.js, Firebase Auth, and Express.js."
+							desc="A website where users can post messages to a wall built with React.js, Firebase Auth, and Express.js."
 							image="/assets/icon_thewall.webp"
 							button1txt="Frontend"
 							button1click={() => {
@@ -100,6 +100,22 @@ function App() {
 							button3txt="Deployed"
 							button3click={() => {
 								window.open('https://jonahs-wall-app.web.app/', '_blank')
+							}}
+						/>
+						<ProjectCard
+							title="CashRegister"
+							desc="A minimalistic money calculator utility app built with React.js and the assets created using Photoshop."
+							image="/assets/icon_cashregister.webp"
+							roundIcon={true}
+							button1txt="Source"
+							button1click={() => {
+								alert(
+									'The CashRegister source is private. If you interested in seeing the code then please connect with me on LinkedIn and send me a message.'
+								)
+							}}
+							button2txt="Deployed"
+							button2click={() => {
+								window.open('https://cashregister-web.web.app/', '_blank')
 							}}
 						/>
 						<ProjectCard
